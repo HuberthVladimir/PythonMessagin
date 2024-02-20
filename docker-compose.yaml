@@ -20,5 +20,8 @@ services:
             - "5672:5672"
             - "15672:15672"
         volumes:
-            - "./data:/var/lib/rabbitmq/mnesia"
-            - "./logs:/var/log/rabbitmq"
+            - "path/to/data"
+            - "path/to/log"
+volumes:
+    data: {}
+    logs: {}
